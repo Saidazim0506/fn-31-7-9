@@ -9,7 +9,7 @@ class StudentSerializer(serializers.Serializer):
 class CourseSerializer(serializers.Serializer):
     title = serializers.CharField()
     descriptions = serializers.CharField()
-    price = serializers.DecimalField(max_digits=10, decimal_places=2)
+    price = serializers.IntegerField()
 
 class TeacherSerializer(serializers.Serializer):
     name = serializers.CharField()
